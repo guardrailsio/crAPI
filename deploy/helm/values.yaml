@@ -33,7 +33,7 @@ web:
       app: crapi-web
   resources:
     limits:
-      cpu: "500m"
+      cpu: "2"
     requests:
       cpu: 256m
   deploymentLabels:
@@ -80,7 +80,7 @@ identity:
     keyAlias: identity
   resources:
     limits:
-      cpu: "500m"
+      cpu: "1"
     requests:
       cpu: 256m
   deploymentLabels:
@@ -109,7 +109,7 @@ community:
     mongoDbDriver: mongodb
   resources:
     limits:
-      cpu: "500m"
+      cpu: "1"
     requests:
       cpu: 256m
   deploymentLabels:
@@ -139,7 +139,7 @@ workshop:
     secretKey: crapi
   resources:
     limits:
-      cpu: "256m"
+      cpu: "1"
     requests:
       cpu: 256m
   deploymentLabels:
@@ -177,7 +177,7 @@ mailhog:
   resources:
     limits:
       cpu: "1"
-      memory: 1024Mi
+      memory: 2048Mi
     requests:
       cpu: 50m
       memory: 64Mi
@@ -276,7 +276,7 @@ apiGatewayService:
       app: gateway-service
   resources:
     limits:
-      cpu: "100m"
+      cpu: "1"
     requests:
       cpu: 50m
   deploymentLabels:
